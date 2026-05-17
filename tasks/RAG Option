@@ -1,0 +1,76 @@
+# Proposal A: RAG-Based Financial Research Assistant
+
+**HP + Morningstar AI Hackathon** | 4 Hours | HP ZGX Nano AI Station
+
+---
+
+## Overview
+
+Build a working retrieval-augmented generation (RAG) application that answers questions about financial documents, running entirely on the ZGX Nano. By the end of the hackathon, your team will have a conversational research assistant that retrieves relevant passages from SEC filings and financial documents, generates cited and grounded answers, and runs completely locally with no cloud dependencies.
+
+---
+
+## What You'll Build
+
+- A document ingestion pipeline that chunks and embeds financial research documents (analyst reports, earnings summaries, fund factsheets)
+- A local vector store for semantic search over the embedded documents
+- A conversational interface powered by a locally-served LLM (via Ollama) that retrieves relevant document chunks and generates cited, grounded answers
+- An evaluation step comparing answer quality and latency against a baseline
+
+---
+
+## Technology Stack
+
+| Layer | Tool | Notes |
+|-------|------|-------|
+| LLM Serving | Ollama (pre-installed via ZGX Toolkit) | Qwen3.6-35B-3A recommended; try different models if you'd like |
+| Embeddings | nomic-embed-text via Ollama | Runs locally, no API keys needed |
+| Vector Store | ChromaDB or FAISS | Lightweight, in-process, no external dependencies |
+| Orchestration | LangChain or LlamaIndex | Good RAG abstractions, familiar to most ML teams |
+| UI | Gradio or Streamlit | Both available via ZGX Toolkit, fast to scaffold |
+| Experiment Tracking | MLflow (pre-installed) | Log prompt templates, retrieval metrics, latency |
+| Dev Environment | VS Code + ZGX Toolkit extension | Use your own laptop; ZGX Nano handles compute |
+
+---
+
+## Sample Data
+
+The ZGX Nano is pre-loaded with sample financial data in the `hackathon_data/` directory. See the data README for full details. Key resources:
+
+- **`filings/`** - SEC 10-K full-text filings from 10 public companies (AAPL, MSFT, JPM, JNJ, XOM, PG, UNH, MA, NVDA, KO). Raw `.txt` files - chunking strategy is up to you.
+- **`portfolios/`** - 5 sample equity portfolios as JSON files with holdings, weights, and sector data.
+- **`compliance/`** - Restricted securities list and compliance policy rules.
+- **`benchmark/`** - 10 benchmark questions with expected answers for evaluation.
+
+---
+
+## Schedule
+
+| Time | Duration | Activity |
+|------|----------|----------|
+| 0:00 | 30 min | **Kickoff and Setup** - Connect laptops to ZGX Nano via VS Code + ZGX Toolkit. Verify Ollama is serving a model. Pull a quick test inference. 10-min orientation: what's on the device, how to SSH in, where the pre-loaded documents live. |
+| 0:30 | 60 min | **Sprint 1: Ingest and Embed** - Build the document ingestion pipeline. Chunk documents, generate embeddings with nomic-embed-text, load into ChromaDB/FAISS. Test retrieval with sample queries. Goal: "Can I find the right paragraph for a given question?" |
+| 1:30 | 15 min | **Break + Check-in** - Where is everyone? Any blockers? Snacks. |
+| 1:45 | 75 min | **Sprint 2: RAG Chain + UI** - Wire retrieval into a generation chain with the local LLM. Build a simple Gradio/Streamlit interface. Prompt engineering: get the model to cite its sources and stay grounded. Log experiments to MLflow. |
+| 3:00 | 15 min | **Break** |
+| 3:15 | 30 min | **Sprint 3: Evaluate and Compare** - Run the benchmark questions. Measure retrieval accuracy, answer quality, and latency. Compare against a baseline (raw LLM without retrieval, or a cloud API call for reference). |
+| 3:45 | 15 min | **Demo and Debrief** - Each team demos their assistant. Open discussion: what surprised you? What worked well? What would you change? |
+
+---
+
+## What to Bring
+
+- Your own laptop (Windows, Mac, or Linux)
+- VS Code installed with the Remote SSH extension
+- Curiosity
+
+---
+
+## Goals
+
+By the end of the hackathon, your team should have:
+
+- A working RAG assistant that answers financial questions using locally-served models and locally-stored documents
+- Experience with the full local AI development loop: chunking, embedding, retrieval, generation, and evaluation
+- Benchmark results comparing retrieval quality, answer accuracy, and latency across different configurations
+- Code and architecture you can take with you and reference later
