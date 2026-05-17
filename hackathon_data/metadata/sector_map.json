@@ -1,0 +1,402 @@
+{
+  "AAPL": {
+    "ticker": "AAPL",
+    "name": "Apple Inc.",
+    "sector": "Technology",
+    "industry": "Consumer Electronics",
+    "market_cap": 4409585041408,
+    "current_price": 300.23
+  },
+  "MSFT": {
+    "ticker": "MSFT",
+    "name": "Microsoft Corporation",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure",
+    "market_cap": 3134205460480,
+    "current_price": 421.92
+  },
+  "GOOGL": {
+    "ticker": "GOOGL",
+    "name": "Alphabet Inc.",
+    "sector": "Communication Services",
+    "industry": "Internet Content & Information",
+    "market_cap": 4807165739008,
+    "current_price": 396.78
+  },
+  "AMZN": {
+    "ticker": "AMZN",
+    "name": "Amazon.com, Inc.",
+    "sector": "Consumer Cyclical",
+    "industry": "Internet Retail",
+    "market_cap": 2841383010304,
+    "current_price": 264.14
+  },
+  "NVDA": {
+    "ticker": "NVDA",
+    "name": "NVIDIA Corporation",
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "market_cap": 5457368842240,
+    "current_price": 225.32
+  },
+  "META": {
+    "ticker": "META",
+    "name": "Meta Platforms, Inc.",
+    "sector": "Communication Services",
+    "industry": "Internet Content & Information",
+    "market_cap": 1559175626752,
+    "current_price": 614.23
+  },
+  "TSLA": {
+    "ticker": "TSLA",
+    "name": "Tesla, Inc.",
+    "sector": "Consumer Cyclical",
+    "industry": "Auto Manufacturers",
+    "market_cap": 1585816797184,
+    "current_price": 422.24
+  },
+  "BRK-B": {
+    "ticker": "BRK-B",
+    "name": "Berkshire Hathaway Inc.",
+    "sector": "Financial Services",
+    "industry": "Insurance - Diversified",
+    "market_cap": 1041113350144,
+    "current_price": 482.7
+  },
+  "UNH": {
+    "ticker": "UNH",
+    "name": "UnitedHealth Group Incorporated",
+    "sector": "Healthcare",
+    "industry": "Healthcare Plans",
+    "market_cap": 357672681472,
+    "current_price": 393.85
+  },
+  "JNJ": {
+    "ticker": "JNJ",
+    "name": "Johnson & Johnson",
+    "sector": "Healthcare",
+    "industry": "Drug Manufacturers - General",
+    "market_cap": 545740161024,
+    "current_price": 226.71
+  },
+  "JPM": {
+    "ticker": "JPM",
+    "name": "JPMorgan Chase & Co.",
+    "sector": "Financial Services",
+    "industry": "Banks - Diversified",
+    "market_cap": 797985275904,
+    "current_price": 297.81
+  },
+  "V": {
+    "ticker": "V",
+    "name": "Visa Inc.",
+    "sector": "Financial Services",
+    "industry": "Credit Services",
+    "market_cap": 619492999168,
+    "current_price": 325.75
+  },
+  "MA": {
+    "ticker": "MA",
+    "name": "Mastercard Incorporated",
+    "sector": "Financial Services",
+    "industry": "Credit Services",
+    "market_cap": 436667154432,
+    "current_price": 494.2
+  },
+  "PG": {
+    "ticker": "PG",
+    "name": "The Procter & Gamble Company",
+    "sector": "Consumer Defensive",
+    "industry": "Household & Personal Products",
+    "market_cap": 329659777024,
+    "current_price": 141.57
+  },
+  "HD": {
+    "ticker": "HD",
+    "name": "The Home Depot, Inc.",
+    "sector": "Consumer Cyclical",
+    "industry": "Home Improvement Retail",
+    "market_cap": 296328200192,
+    "current_price": 297.51
+  },
+  "XOM": {
+    "ticker": "XOM",
+    "name": "Exxon Mobil Corporation",
+    "sector": "Energy",
+    "industry": "Oil & Gas Integrated",
+    "market_cap": 654570029056,
+    "current_price": 157.92
+  },
+  "CVX": {
+    "ticker": "CVX",
+    "name": "Chevron Corporation",
+    "sector": "Energy",
+    "industry": "Oil & Gas Integrated",
+    "market_cap": 380594323456,
+    "current_price": 191.1
+  },
+  "MRK": {
+    "ticker": "MRK",
+    "name": "Merck & Co., Inc.",
+    "sector": "Healthcare",
+    "industry": "Drug Manufacturers - General",
+    "market_cap": 275089031168,
+    "current_price": 111.38
+  },
+  "ABBV": {
+    "ticker": "ABBV",
+    "name": "AbbVie Inc.",
+    "sector": "Healthcare",
+    "industry": "Drug Manufacturers - General",
+    "market_cap": 371715538944,
+    "current_price": 210.39
+  },
+  "PFE": {
+    "ticker": "PFE",
+    "name": "Pfizer Inc.",
+    "sector": "Healthcare",
+    "industry": "Drug Manufacturers - General",
+    "market_cap": 144366927872,
+    "current_price": 25.33
+  },
+  "KO": {
+    "ticker": "KO",
+    "name": "The Coca-Cola Company",
+    "sector": "Consumer Defensive",
+    "industry": "Beverages - Non-Alcoholic",
+    "market_cap": 347726643200,
+    "current_price": 80.82
+  },
+  "PEP": {
+    "ticker": "PEP",
+    "name": "PepsiCo, Inc.",
+    "sector": "Consumer Defensive",
+    "industry": "Beverages - Non-Alcoholic",
+    "market_cap": 203838226432,
+    "current_price": 149.12
+  },
+  "COST": {
+    "ticker": "COST",
+    "name": "Costco Wholesale Corporation",
+    "sector": "Consumer Defensive",
+    "industry": "Discount Stores",
+    "market_cap": 465369300992,
+    "current_price": 1048.95
+  },
+  "WMT": {
+    "ticker": "WMT",
+    "name": "Walmart Inc.",
+    "sector": "Consumer Defensive",
+    "industry": "Discount Stores",
+    "market_cap": 1047786684416,
+    "current_price": 131.45
+  },
+  "MCD": {
+    "ticker": "MCD",
+    "name": "McDonald's Corporation",
+    "sector": "Consumer Cyclical",
+    "industry": "Restaurants",
+    "market_cap": 196376723456,
+    "current_price": 276.39
+  },
+  "DIS": {
+    "ticker": "DIS",
+    "name": "The Walt Disney Company",
+    "sector": "Communication Services",
+    "industry": "Entertainment",
+    "market_cap": 178374459392,
+    "current_price": 102.72
+  },
+  "NFLX": {
+    "ticker": "NFLX",
+    "name": "Netflix, Inc.",
+    "sector": "Communication Services",
+    "industry": "Entertainment",
+    "market_cap": 366423670784,
+    "current_price": 87.02
+  },
+  "CRM": {
+    "ticker": "CRM",
+    "name": "Salesforce, Inc.",
+    "sector": "Technology",
+    "industry": "Software - Application",
+    "market_cap": 141940506624,
+    "current_price": 173.51
+  },
+  "ADBE": {
+    "ticker": "ADBE",
+    "name": "Adobe Inc.",
+    "sector": "Technology",
+    "industry": "Software - Application",
+    "market_cap": 100079919104,
+    "current_price": 247.6
+  },
+  "INTC": {
+    "ticker": "INTC",
+    "name": "Intel Corporation",
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "market_cap": 546677981184,
+    "current_price": 108.77
+  },
+  "AMD": {
+    "ticker": "AMD",
+    "name": "Advanced Micro Devices, Inc.",
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "market_cap": 691537707008,
+    "current_price": 424.1
+  },
+  "QCOM": {
+    "ticker": "QCOM",
+    "name": "QUALCOMM Incorporated",
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "market_cap": 212370472960,
+    "current_price": 201.49
+  },
+  "TXN": {
+    "ticker": "TXN",
+    "name": "Texas Instruments Incorporated",
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "market_cap": 275512393728,
+    "current_price": 302.73
+  },
+  "NEE": {
+    "ticker": "NEE",
+    "name": "NextEra Energy, Inc.",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric",
+    "market_cap": 194687483904,
+    "current_price": 93.36
+  },
+  "DUK": {
+    "ticker": "DUK",
+    "name": "Duke Energy Corporation",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric",
+    "market_cap": 94292164608,
+    "current_price": 120.95
+  },
+  "SO": {
+    "ticker": "SO",
+    "name": "The Southern Company",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric",
+    "market_cap": 104331722752,
+    "current_price": 92.55
+  },
+  "LMT": {
+    "ticker": "LMT",
+    "name": "Lockheed Martin Corporation",
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense",
+    "market_cap": 118973136896,
+    "current_price": 516.01
+  },
+  "RTX": {
+    "ticker": "RTX",
+    "name": "RTX Corporation",
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense",
+    "market_cap": 230525255680,
+    "current_price": 171.18
+  },
+  "BA": {
+    "ticker": "BA",
+    "name": "The Boeing Company",
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense",
+    "market_cap": 173812793344,
+    "current_price": 220.49
+  },
+  "GE": {
+    "ticker": "GE",
+    "name": "GE Aerospace",
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense",
+    "market_cap": 294150897664,
+    "current_price": 281.53
+  },
+  "CAT": {
+    "ticker": "CAT",
+    "name": "Caterpillar Inc.",
+    "sector": "Industrials",
+    "industry": "Farm & Heavy Construction Machinery",
+    "market_cap": 409148456960,
+    "current_price": 888.31
+  },
+  "MMM": {
+    "ticker": "MMM",
+    "name": "3M Company",
+    "sector": "Industrials",
+    "industry": "Conglomerates",
+    "market_cap": 76263563264,
+    "current_price": 146.22
+  },
+  "GS": {
+    "ticker": "GS",
+    "name": "The Goldman Sachs Group, Inc.",
+    "sector": "Financial Services",
+    "industry": "Capital Markets",
+    "market_cap": 279805689856,
+    "current_price": 948.47
+  },
+  "MS": {
+    "ticker": "MS",
+    "name": "Morgan Stanley",
+    "sector": "Financial Services",
+    "industry": "Capital Markets",
+    "market_cap": 303643099136,
+    "current_price": 192.51
+  },
+  "BLK": {
+    "ticker": "BLK",
+    "name": "BlackRock, Inc.",
+    "sector": "Financial Services",
+    "industry": "Asset Management",
+    "market_cap": 167947649024,
+    "current_price": 1081.9
+  },
+  "SCHW": {
+    "ticker": "SCHW",
+    "name": "The Charles Schwab Corporation",
+    "sector": "Financial Services",
+    "industry": "Capital Markets",
+    "market_cap": 158052630528,
+    "current_price": 90.88
+  },
+  "USB": {
+    "ticker": "USB",
+    "name": "U.S. Bancorp",
+    "sector": "Financial Services",
+    "industry": "Banks - Regional",
+    "market_cap": 82458165248,
+    "current_price": 53.12
+  },
+  "WFC": {
+    "ticker": "WFC",
+    "name": "Wells Fargo & Company",
+    "sector": "Financial Services",
+    "industry": "Banks - Diversified",
+    "market_cap": 224679100416,
+    "current_price": 73.42
+  },
+  "C": {
+    "ticker": "C",
+    "name": "Citigroup Inc.",
+    "sector": "Financial Services",
+    "industry": "Banks - Diversified",
+    "market_cap": 210502303744,
+    "current_price": 123.42
+  },
+  "AXP": {
+    "ticker": "AXP",
+    "name": "American Express Company",
+    "sector": "Financial Services",
+    "industry": "Credit Services",
+    "market_cap": 213895708672,
+    "current_price": 313.48
+  }
+}

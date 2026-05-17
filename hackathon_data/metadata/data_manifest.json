@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-05-17T03:26:02.525357",
+  "description": "HP + Morningstar AI Hackathon sample data",
+  "generator_script": "prep_hackathon_data.py",
+  "directories": {
+    "portfolios/": "5 sample portfolio JSON files with holdings, weights, and sector data",
+    "filings/": "SEC 10-K full-text files (.txt) \u2014 chunking strategy is left to participants",
+    "compliance/": "restricted_list.csv and compliance_rules.yaml",
+    "benchmark/": "benchmark_questions.json with 10 test queries and expected answers",
+    "metadata/": "sector_map.json and filing_manifest.json"
+  },
+  "data_sources": {
+    "ticker_metadata": "Yahoo Finance via yfinance (free, no API key)",
+    "sec_filings": "SEC EDGAR via edgartools (free, no API key)",
+    "portfolios": "Synthetically generated using real ticker/sector data",
+    "restricted_list": "Synthetically generated for hackathon use",
+    "compliance_rules": "Synthetically generated \u2014 realistic but fictional policy"
+  },
+  "usage_notes": [
+    "Copy entire hackathon_data/ directory to the ZGX Nano",
+    "All data is self-contained \u2014 no internet access needed during hackathon",
+    "Filings are raw full text \u2014 participants choose their own chunking strategy",
+    "Portfolios are designed to trigger compliance violations for demo purposes",
+    "Benchmark questions have known answers for evaluation in Sprint 3"
+  ]
+}

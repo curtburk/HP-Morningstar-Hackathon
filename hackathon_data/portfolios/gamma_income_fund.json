@@ -1,0 +1,210 @@
+{
+  "portfolio_name": "Gamma Income Fund",
+  "description": "Income-focused portfolio with healthcare and utilities",
+  "style": "income",
+  "as_of_date": "2026-05-17",
+  "total_market_value": 9999999.99,
+  "num_holdings": 20,
+  "holdings": [
+    {
+      "ticker": "PFE",
+      "company_name": "Pfizer Inc.",
+      "sector": "Healthcare",
+      "industry": "Drug Manufacturers - General",
+      "weight": 0.130018,
+      "shares": 51329.8,
+      "market_value": 1300183.91,
+      "price": 25.33
+    },
+    {
+      "ticker": "MRK",
+      "company_name": "Merck & Co., Inc.",
+      "sector": "Healthcare",
+      "industry": "Drug Manufacturers - General",
+      "weight": 0.129489,
+      "shares": 11625.86,
+      "market_value": 1294888.12,
+      "price": 111.38
+    },
+    {
+      "ticker": "JNJ",
+      "company_name": "Johnson & Johnson",
+      "sector": "Healthcare",
+      "industry": "Drug Manufacturers - General",
+      "weight": 0.110315,
+      "shares": 4865.92,
+      "market_value": 1103153.83,
+      "price": 226.71
+    },
+    {
+      "ticker": "UNH",
+      "company_name": "UnitedHealth Group Incorporated",
+      "sector": "Healthcare",
+      "industry": "Healthcare Plans",
+      "weight": 0.085047,
+      "shares": 2159.37,
+      "market_value": 850467.07,
+      "price": 393.85
+    },
+    {
+      "ticker": "WMT",
+      "company_name": "Walmart Inc.",
+      "sector": "Consumer Defensive",
+      "industry": "Discount Stores",
+      "weight": 0.050751,
+      "shares": 3860.85,
+      "market_value": 507509.0,
+      "price": 131.45
+    },
+    {
+      "ticker": "JPM",
+      "company_name": "JPMorgan Chase & Co.",
+      "sector": "Financial Services",
+      "industry": "Banks - Diversified",
+      "weight": 0.050059,
+      "shares": 1680.89,
+      "market_value": 500586.24,
+      "price": 297.81
+    },
+    {
+      "ticker": "PG",
+      "company_name": "The Procter & Gamble Company",
+      "sector": "Consumer Defensive",
+      "industry": "Household & Personal Products",
+      "weight": 0.047364,
+      "shares": 3345.62,
+      "market_value": 473639.28,
+      "price": 141.57
+    },
+    {
+      "ticker": "USB",
+      "company_name": "U.S. Bancorp",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional",
+      "weight": 0.047009,
+      "shares": 8849.62,
+      "market_value": 470091.99,
+      "price": 53.12
+    },
+    {
+      "ticker": "MCD",
+      "company_name": "McDonald's Corporation",
+      "sector": "Consumer Cyclical",
+      "industry": "Restaurants",
+      "weight": 0.045278,
+      "shares": 1638.2,
+      "market_value": 452781.15,
+      "price": 276.39
+    },
+    {
+      "ticker": "NVDA",
+      "company_name": "NVIDIA Corporation",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "weight": 0.043355,
+      "shares": 1924.14,
+      "market_value": 433546.44,
+      "price": 225.32
+    },
+    {
+      "ticker": "NEE",
+      "company_name": "NextEra Energy, Inc.",
+      "sector": "Utilities",
+      "industry": "Utilities - Regulated Electric",
+      "weight": 0.037739,
+      "shares": 4042.35,
+      "market_value": 377393.51,
+      "price": 93.36
+    },
+    {
+      "ticker": "ABBV",
+      "company_name": "AbbVie Inc.",
+      "sector": "Healthcare",
+      "industry": "Drug Manufacturers - General",
+      "weight": 0.03716,
+      "shares": 1766.22,
+      "market_value": 371595.42,
+      "price": 210.39
+    },
+    {
+      "ticker": "PEP",
+      "company_name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive",
+      "industry": "Beverages - Non-Alcoholic",
+      "weight": 0.034784,
+      "shares": 2332.62,
+      "market_value": 347839.88,
+      "price": 149.12
+    },
+    {
+      "ticker": "ADBE",
+      "company_name": "Adobe Inc.",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "weight": 0.034692,
+      "shares": 1401.11,
+      "market_value": 346915.85,
+      "price": 247.6
+    },
+    {
+      "ticker": "MSFT",
+      "company_name": "Microsoft Corporation",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "weight": 0.028268,
+      "shares": 670.0,
+      "market_value": 282684.6,
+      "price": 421.92
+    },
+    {
+      "ticker": "BA",
+      "company_name": "The Boeing Company",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "weight": 0.027687,
+      "shares": 1255.7,
+      "market_value": 276870.17,
+      "price": 220.49
+    },
+    {
+      "ticker": "SCHW",
+      "company_name": "The Charles Schwab Corporation",
+      "sector": "Financial Services",
+      "industry": "Capital Markets",
+      "weight": 0.023367,
+      "shares": 2571.24,
+      "market_value": 233674.01,
+      "price": 90.88
+    },
+    {
+      "ticker": "AXP",
+      "company_name": "American Express Company",
+      "sector": "Financial Services",
+      "industry": "Credit Services",
+      "weight": 0.019586,
+      "shares": 624.8,
+      "market_value": 195862.91,
+      "price": 313.48
+    },
+    {
+      "ticker": "AAPL",
+      "company_name": "Apple Inc.",
+      "sector": "Technology",
+      "industry": "Consumer Electronics",
+      "weight": 0.011976,
+      "shares": 398.89,
+      "market_value": 119760.08,
+      "price": 300.23
+    },
+    {
+      "ticker": "CAT",
+      "company_name": "Caterpillar Inc.",
+      "sector": "Industrials",
+      "industry": "Farm & Heavy Construction Machinery",
+      "weight": 0.006056,
+      "shares": 68.17,
+      "market_value": 60556.53,
+      "price": 888.31
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "portfolio_name": "Alpha Growth Fund",
+  "description": "Aggressive growth portfolio with heavy tech concentration",
+  "style": "growth",
+  "as_of_date": "2026-05-17",
+  "total_market_value": 9999999.95,
+  "num_holdings": 25,
+  "holdings": [
+    {
+      "ticker": "CRM",
+      "company_name": "Salesforce, Inc.",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "weight": 0.142327,
+      "shares": 8202.82,
+      "market_value": 1423272.03,
+      "price": 173.51
+    },
+    {
+      "ticker": "QCOM",
+      "company_name": "QUALCOMM Incorporated",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "weight": 0.11117,
+      "shares": 5517.38,
+      "market_value": 1111696.23,
+      "price": 201.49
+    },
+    {
+      "ticker": "AAPL",
+      "company_name": "Apple Inc.",
+      "sector": "Technology",
+      "industry": "Consumer Electronics",
+      "weight": 0.107963,
+      "shares": 3596.02,
+      "market_value": 1079632.82,
+      "price": 300.23
+    },
+    {
+      "ticker": "AMD",
+      "company_name": "Advanced Micro Devices, Inc.",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "weight": 0.101381,
+      "shares": 2390.5,
+      "market_value": 1013809.98,
+      "price": 424.1
+    },
+    {
+      "ticker": "NVDA",
+      "company_name": "NVIDIA Corporation",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "weight": 0.0817,
+      "shares": 3625.94,
+      "market_value": 816997.35,
+      "price": 225.32
+    },
+    {
+      "ticker": "INTC",
+      "company_name": "Intel Corporation",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "weight": 0.057431,
+      "shares": 5280.07,
+      "market_value": 574313.72,
+      "price": 108.77
+    },
+    {
+      "ticker": "MS",
+      "company_name": "Morgan Stanley",
+      "sector": "Financial Services",
+      "industry": "Capital Markets",
+      "weight": 0.039757,
+      "shares": 2065.18,
+      "market_value": 397568.08,
+      "price": 192.51
+    },
+    {
+      "ticker": "TXN",
+      "company_name": "Texas Instruments Incorporated",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "weight": 0.036135,
+      "shares": 1193.63,
+      "market_value": 361348.61,
+      "price": 302.73
+    },
+    {
+      "ticker": "DUK",
+      "company_name": "Duke Energy Corporation",
+      "sector": "Utilities",
+      "industry": "Utilities - Regulated Electric",
+      "weight": 0.035316,
+      "shares": 2919.87,
+      "market_value": 353158.12,
+      "price": 120.95
+    },
+    {
+      "ticker": "MA",
+      "company_name": "Mastercard Incorporated",
+      "sector": "Financial Services",
+      "industry": "Credit Services",
+      "weight": 0.030176,
+      "shares": 610.61,
+      "market_value": 301761.73,
+      "price": 494.2
+    },
+    {
+      "ticker": "SCHW",
+      "company_name": "The Charles Schwab Corporation",
+      "sector": "Financial Services",
+      "industry": "Capital Markets",
+      "weight": 0.026784,
+      "shares": 2947.14,
+      "market_value": 267835.65,
+      "price": 90.88
+    },
+    {
+      "ticker": "GS",
+      "company_name": "The Goldman Sachs Group, Inc.",
+      "sector": "Financial Services",
+      "industry": "Capital Markets",
+      "weight": 0.026085,
+      "shares": 275.02,
+      "market_value": 260851.62,
+      "price": 948.47
+    },
+    {
+      "ticker": "WFC",
+      "company_name": "Wells Fargo & Company",
+      "sector": "Financial Services",
+      "industry": "Banks - Diversified",
+      "weight": 0.025663,
+      "shares": 3495.42,
+      "market_value": 256633.5,
+      "price": 73.42
+    },
+    {
+      "ticker": "MCD",
+      "company_name": "McDonald's Corporation",
+      "sector": "Consumer Cyclical",
+      "industry": "Restaurants",
+      "weight": 0.024384,
+      "shares": 882.22,
+      "market_value": 243837.99,
+      "price": 276.39
+    },
+    {
+      "ticker": "MRK",
+      "company_name": "Merck & Co., Inc.",
+      "sector": "Healthcare",
+      "industry": "Drug Manufacturers - General",
+      "weight": 0.021813,
+      "shares": 1958.41,
+      "market_value": 218127.31,
+      "price": 111.38
+    },
+    {
+      "ticker": "META",
+      "company_name": "Meta Platforms, Inc.",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information",
+      "weight": 0.019939,
+      "shares": 324.61,
+      "market_value": 199386.41,
+      "price": 614.23
+    },
+    {
+      "ticker": "MSFT",
+      "company_name": "Microsoft Corporation",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "weight": 0.01967,
+      "shares": 466.2,
+      "market_value": 196700.78,
+      "price": 421.92
+    },
+    {
+      "ticker": "ADBE",
+      "company_name": "Adobe Inc.",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "weight": 0.019462,
+      "shares": 786.02,
+      "market_value": 194618.03,
+      "price": 247.6
+    },
+    {
+      "ticker": "XOM",
+      "company_name": "Exxon Mobil Corporation",
+      "sector": "Energy",
+      "industry": "Oil & Gas Integrated",
+      "weight": 0.015778,
+      "shares": 999.12,
+      "market_value": 157781.52,
+      "price": 157.92
+    },
+    {
+      "ticker": "RTX",
+      "company_name": "RTX Corporation",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "weight": 0.013566,
+      "shares": 792.48,
+      "market_value": 135656.83,
+      "price": 171.18
+    },
+    {
+      "ticker": "CAT",
+      "company_name": "Caterpillar Inc.",
+      "sector": "Industrials",
+      "industry": "Farm & Heavy Construction Machinery",
+      "weight": 0.010386,
+      "shares": 116.91,
+      "market_value": 103856.05,
+      "price": 888.31
+    },
+    {
+      "ticker": "PEP",
+      "company_name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive",
+      "industry": "Beverages - Non-Alcoholic",
+      "weight": 0.009192,
+      "shares": 616.43,
+      "market_value": 91922.66,
+      "price": 149.12
+    },
+    {
+      "ticker": "LMT",
+      "company_name": "Lockheed Martin Corporation",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "weight": 0.008863,
+      "shares": 171.76,
+      "market_value": 88629.8,
+      "price": 516.01
+    },
+    {
+      "ticker": "CVX",
+      "company_name": "Chevron Corporation",
+      "sector": "Energy",
+      "industry": "Oil & Gas Integrated",
+      "weight": 0.008281,
+      "shares": 433.31,
+      "market_value": 82806.38,
+      "price": 191.1
+    },
+    {
+      "ticker": "NEE",
+      "company_name": "NextEra Energy, Inc.",
+      "sector": "Utilities",
+      "industry": "Utilities - Regulated Electric",
+      "weight": 0.00678,
+      "shares": 726.19,
+      "market_value": 67796.75,
+      "price": 93.36
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "portfolio_name": "Epsilon Concentrated Fund",
+  "description": "High-conviction concentrated portfolio",
+  "style": "concentrated",
+  "as_of_date": "2026-05-17",
+  "total_market_value": 9999999.98,
+  "num_holdings": 15,
+  "holdings": [
+    {
+      "ticker": "BRK-B",
+      "company_name": "Berkshire Hathaway Inc.",
+      "sector": "Financial Services",
+      "industry": "Insurance - Diversified",
+      "weight": 0.180977,
+      "shares": 3749.27,
+      "market_value": 1809773.52,
+      "price": 482.7
+    },
+    {
+      "ticker": "SCHW",
+      "company_name": "The Charles Schwab Corporation",
+      "sector": "Financial Services",
+      "industry": "Capital Markets",
+      "weight": 0.142391,
+      "shares": 15668.04,
+      "market_value": 1423911.75,
+      "price": 90.88
+    },
+    {
+      "ticker": "AXP",
+      "company_name": "American Express Company",
+      "sector": "Financial Services",
+      "industry": "Credit Services",
+      "weight": 0.134878,
+      "shares": 4302.6,
+      "market_value": 1348779.01,
+      "price": 313.48
+    },
+    {
+      "ticker": "GS",
+      "company_name": "The Goldman Sachs Group, Inc.",
+      "sector": "Financial Services",
+      "industry": "Capital Markets",
+      "weight": 0.128396,
+      "shares": 1353.72,
+      "market_value": 1283963.62,
+      "price": 948.47
+    },
+    {
+      "ticker": "JPM",
+      "company_name": "JPMorgan Chase & Co.",
+      "sector": "Financial Services",
+      "industry": "Banks - Diversified",
+      "weight": 0.059623,
+      "shares": 2002.06,
+      "market_value": 596233.66,
+      "price": 297.81
+    },
+    {
+      "ticker": "MRK",
+      "company_name": "Merck & Co., Inc.",
+      "sector": "Healthcare",
+      "industry": "Drug Manufacturers - General",
+      "weight": 0.052414,
+      "shares": 4705.83,
+      "market_value": 524135.0,
+      "price": 111.38
+    },
+    {
+      "ticker": "ADBE",
+      "company_name": "Adobe Inc.",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "weight": 0.051465,
+      "shares": 2078.55,
+      "market_value": 514648.51,
+      "price": 247.6
+    },
+    {
+      "ticker": "USB",
+      "company_name": "U.S. Bancorp",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional",
+      "weight": 0.045985,
+      "shares": 8656.83,
+      "market_value": 459850.57,
+      "price": 53.12
+    },
+    {
+      "ticker": "LMT",
+      "company_name": "Lockheed Martin Corporation",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "weight": 0.045985,
+      "shares": 891.17,
+      "market_value": 459851.1,
+      "price": 516.01
+    },
+    {
+      "ticker": "PFE",
+      "company_name": "Pfizer Inc.",
+      "sector": "Healthcare",
+      "industry": "Drug Manufacturers - General",
+      "weight": 0.033771,
+      "shares": 13332.46,
+      "market_value": 337711.29,
+      "price": 25.33
+    },
+    {
+      "ticker": "V",
+      "company_name": "Visa Inc.",
+      "sector": "Financial Services",
+      "industry": "Credit Services",
+      "weight": 0.033145,
+      "shares": 1017.5,
+      "market_value": 331450.03,
+      "price": 325.75
+    },
+    {
+      "ticker": "RTX",
+      "company_name": "RTX Corporation",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "weight": 0.03226,
+      "shares": 1884.55,
+      "market_value": 322597.5,
+      "price": 171.18
+    },
+    {
+      "ticker": "CAT",
+      "company_name": "Caterpillar Inc.",
+      "sector": "Industrials",
+      "industry": "Farm & Heavy Construction Machinery",
+      "weight": 0.030355,
+      "shares": 341.72,
+      "market_value": 303551.85,
+      "price": 888.31
+    },
+    {
+      "ticker": "UNH",
+      "company_name": "UnitedHealth Group Incorporated",
+      "sector": "Healthcare",
+      "industry": "Healthcare Plans",
+      "weight": 0.016887,
+      "shares": 428.77,
+      "market_value": 168870.94,
+      "price": 393.85
+    },
+    {
+      "ticker": "QCOM",
+      "company_name": "QUALCOMM Incorporated",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "weight": 0.011467,
+      "shares": 569.12,
+      "market_value": 114671.63,
+      "price": 201.49
+    }
+  ]
+}

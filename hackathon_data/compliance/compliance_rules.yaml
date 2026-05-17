@@ -1,0 +1,34 @@
+# Compliance Policy Rules
+# Used by the agent to check portfolio compliance programmatically
+
+concentration_limits:
+  single_sector_max: 0.30          # No single sector above 30%
+  single_holding_max: 0.05         # No single holding above 5%
+  top_5_holdings_max: 0.35         # Top 5 holdings combined cannot exceed 35%
+  single_issuer_debt_max: 0.10     # No single issuer debt above 10% (fixed income)
+
+restricted_securities:
+  source: "restricted_list.csv"
+  action_on_match: "flag_and_report"
+  hard_block_action: "reject_trade"
+  soft_flag_action: "require_approval"
+  watch_list_action: "log_and_monitor"
+
+risk_metrics:
+  herfindahl_threshold: 0.15       # HHI above 0.15 = concentrated
+  max_tracking_error: 0.05         # Max 5% tracking error vs benchmark
+  min_holdings: 15                 # Minimum 15 holdings required
+  max_cash_allocation: 0.10        # Max 10% in cash
+
+reporting:
+  format: "markdown"
+  include_timestamps: true
+  include_data_sources: true
+  compliance_officer_email: "compliance@example.com"
+  escalation_threshold: "hard_block"
+
+audit_trail:
+  log_all_tool_calls: true
+  log_agent_reasoning: true
+  retention_days: 365
+  storage: "local_json"

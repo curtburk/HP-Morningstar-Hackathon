@@ -1,0 +1,16 @@
+ticker,company_name,restriction_type,reason,effective_date,expiry_date,added_by
+GS,"The Goldman Sachs Group, Inc.",soft_flag,Material non-public information — pending merger announcement,2026-05-15,2026-07-20,Compliance Team
+HD,"The Home Depot, Inc.",soft_flag,Insider trading investigation — SEC enforcement action pending,2026-02-21,2026-10-13,Risk Committee
+QCOM,QUALCOMM Incorporated,hard_block,Trading window closed — quarterly earnings blackout period,2026-04-26,2026-09-09,Compliance Team
+GE,GE Aerospace,hard_block,Regulatory hold — OFAC sanctions review,2026-04-01,2026-06-30,Legal Dept
+ABBV,AbbVie Inc.,soft_flag,Research restriction — analyst coverage initiation pending,2026-04-22,2026-08-23,Chief Compliance Officer
+NFLX,"Netflix, Inc.",hard_block,Compliance hold — related party transaction review,2026-04-15,2026-09-10,Risk Committee
+NVDA,NVIDIA Corporation,watch_list,Legal hold — pending litigation disclosure,2026-03-07,2026-10-22,Chief Compliance Officer
+C,Citigroup Inc.,watch_list,Risk committee restriction — concentration limit breach,2026-05-11,2026-10-07,Chief Compliance Officer
+XYZQ,XYZQ Corp,watch_list,Material non-public information — pending merger announcement,2026-03-06,2026-08-18,Chief Compliance Officer
+BADCO,BADCO Corp,watch_list,Insider trading investigation — SEC enforcement action pending,2026-03-23,2026-07-11,Risk Committee
+FLAGD,FLAGD Corp,hard_block,Trading window closed — quarterly earnings blackout period,2026-03-19,2026-07-07,Legal Dept
+NOGO,NOGO Corp,soft_flag,Regulatory hold — OFAC sanctions review,2026-04-03,2026-08-06,Chief Compliance Officer
+WATCHIT,WATCHIT Corp,soft_flag,Research restriction — analyst coverage initiation pending,2026-02-24,2026-07-02,Compliance Team
+HALTD,HALTD Corp,hard_block,Compliance hold — related party transaction review,2026-04-24,2026-08-18,Legal Dept
+SUSP,SUSP Corp,hard_block,Legal hold — pending litigation disclosure,2026-04-06,2026-06-25,Legal Dept

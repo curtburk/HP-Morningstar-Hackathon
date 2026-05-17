@@ -1,0 +1,82 @@
+[
+  {
+    "ticker": "AAPL",
+    "company": "Apple Inc.",
+    "file": "aapl_10k.txt",
+    "filing_date": "2025-10-31",
+    "format": "markdown",
+    "characters": 279757
+  },
+  {
+    "ticker": "MSFT",
+    "company": "MICROSOFT CORP",
+    "file": "msft_10k.txt",
+    "filing_date": "2025-07-30",
+    "format": "markdown",
+    "characters": 421988
+  },
+  {
+    "ticker": "JPM",
+    "company": "JPMORGAN CHASE & CO",
+    "file": "jpm_10k.txt",
+    "filing_date": "2026-02-13",
+    "format": "markdown",
+    "characters": 1982110
+  },
+  {
+    "ticker": "JNJ",
+    "company": "JOHNSON & JOHNSON",
+    "file": "jnj_10k.txt",
+    "filing_date": "2026-02-11",
+    "format": "markdown",
+    "characters": 583937
+  },
+  {
+    "ticker": "XOM",
+    "company": "EXXON MOBIL CORP",
+    "file": "xom_10k.txt",
+    "filing_date": "2026-02-18",
+    "format": "markdown",
+    "characters": 938710
+  },
+  {
+    "ticker": "PG",
+    "company": "PROCTER & GAMBLE Co",
+    "file": "pg_10k.txt",
+    "filing_date": "2025-08-04",
+    "format": "markdown",
+    "characters": 430546
+  },
+  {
+    "ticker": "UNH",
+    "company": "UNITEDHEALTH GROUP INC",
+    "file": "unh_10k.txt",
+    "filing_date": "2026-03-02",
+    "format": "markdown",
+    "characters": 471346
+  },
+  {
+    "ticker": "MA",
+    "company": "Mastercard Inc",
+    "file": "ma_10k.txt",
+    "filing_date": "2026-02-11",
+    "format": "markdown",
+    "characters": 631472
+  },
+  {
+    "ticker": "NVDA",
+    "company": "NVIDIA CORP",
+    "file": "nvda_10k.txt",
+    "filing_date": "2026-02-25",
+    "format": "markdown",
+    "characters": 429312
+  },
+  {
+    "ticker": "KO",
+    "company": "COCA COLA CO",
+    "file": "ko_10k.txt",
+    "filing_date": "2026-02-20",
+    "format": "markdown",
+    "characters": 772563
+  }
+]

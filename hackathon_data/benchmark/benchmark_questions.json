@@ -1,0 +1,149 @@
+[
+  {
+    "id": "BQ-001",
+    "question": "What is the Technology sector exposure in the Alpha Growth Fund? Does it exceed the 30% concentration limit?",
+    "expected_tools": [
+      "lookup_portfolio",
+      "get_sector_exposure"
+    ],
+    "expected_answer_contains": [
+      "Technology",
+      "67.7"
+    ],
+    "compliance_violation": true,
+    "difficulty": "easy"
+  },
+  {
+    "id": "BQ-002",
+    "question": "Check whether any holdings in the Alpha Growth Fund appear on the restricted securities list.",
+    "expected_tools": [
+      "lookup_portfolio",
+      "check_restricted_list"
+    ],
+    "expected_answer_contains": [
+      "NVDA",
+      "GS",
+      "QCOM"
+    ],
+    "compliance_violation": true,
+    "difficulty": "easy"
+  },
+  {
+    "id": "BQ-003",
+    "question": "Calculate the Herfindahl concentration index for the Alpha Growth Fund and determine if it exceeds the 0.15 threshold.",
+    "expected_tools": [
+      "lookup_portfolio",
+      "calculate_risk_metric"
+    ],
+    "expected_answer_contains": [
+      "herfindahl"
+    ],
+    "compliance_violation": null,
+    "difficulty": "medium"
+  },
+  {
+    "id": "BQ-004",
+    "question": "Does the Alpha Growth Fund have any single holding exceeding the 5% weight limit? If so, which ones?",
+    "expected_tools": [
+      "lookup_portfolio"
+    ],
+    "expected_answer_contains": [
+      "CRM",
+      "QCOM",
+      "AAPL",
+      "AMD",
+      "NVDA",
+      "INTC"
+    ],
+    "compliance_violation": true,
+    "difficulty": "easy"
+  },
+  {
+    "id": "BQ-005",
+    "question": "Run a full compliance review of the Alpha Growth Fund: check sector concentration limits, single-holding limits, restricted list violations, and concentration index. Produce a compliance memo.",
+    "expected_tools": [
+      "lookup_portfolio",
+      "get_sector_exposure",
+      "check_restricted_list",
+      "calculate_risk_metric",
+      "generate_memo"
+    ],
+    "expected_answer_contains": [
+      "compliance",
+      "memo"
+    ],
+    "compliance_violation": true,
+    "difficulty": "hard"
+  },
+  {
+    "id": "BQ-006",
+    "question": "Compare the sector diversification of the Alpha Growth Fund versus the Beta Value Fund. Which is better diversified?",
+    "expected_tools": [
+      "lookup_portfolio",
+      "get_sector_exposure",
+      "calculate_risk_metric"
+    ],
+    "expected_answer_contains": [
+      "Alpha Growth Fund",
+      "Beta Value Fund"
+    ],
+    "compliance_violation": null,
+    "difficulty": "medium"
+  },
+  {
+    "id": "BQ-007",
+    "question": "Search the SEC filings for any discussion of revenue guidance or forward-looking revenue projections.",
+    "expected_tools": [
+      "search_filings"
+    ],
+    "expected_answer_contains": [
+      "revenue"
+    ],
+    "compliance_violation": null,
+    "difficulty": "easy"
+  },
+  {
+    "id": "BQ-008",
+    "question": "Find any risk factors related to regulatory compliance or data privacy mentioned in the available SEC filings.",
+    "expected_tools": [
+      "search_filings"
+    ],
+    "expected_answer_contains": [
+      "risk",
+      "regulatory"
+    ],
+    "compliance_violation": null,
+    "difficulty": "easy"
+  },
+  {
+    "id": "BQ-009",
+    "question": "I want to add 500 shares of ABBV to the Alpha Growth Fund. Is this trade allowed?",
+    "expected_tools": [
+      "check_restricted_list"
+    ],
+    "expected_answer_contains": [
+      "restricted",
+      "blocked",
+      "not allowed"
+    ],
+    "compliance_violation": true,
+    "difficulty": "medium"
+  },
+  {
+    "id": "BQ-010",
+    "question": "Generate a comprehensive compliance report for all five portfolios. Flag any violations across concentration limits, restricted securities, and minimum holding requirements.",
+    "expected_tools": [
+      "lookup_portfolio",
+      "get_sector_exposure",
+      "check_restricted_list",
+      "calculate_risk_metric",
+      "generate_memo"
+    ],
+    "expected_answer_contains": [
+      "compliance",
+      "report"
+    ],
+    "compliance_violation": true,
+    "difficulty": "hard"
+  }
+]

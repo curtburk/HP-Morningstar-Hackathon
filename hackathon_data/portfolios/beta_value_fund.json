@@ -1,0 +1,310 @@
+{
+  "portfolio_name": "Beta Value Fund",
+  "description": "Diversified value portfolio across sectors",
+  "style": "value",
+  "as_of_date": "2026-05-17",
+  "total_market_value": 9999999.98,
+  "num_holdings": 30,
+  "holdings": [
+    {
+      "ticker": "PEP",
+      "company_name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive",
+      "industry": "Beverages - Non-Alcoholic",
+      "weight": 0.070537,
+      "shares": 4730.21,
+      "market_value": 705369.44,
+      "price": 149.12
+    },
+    {
+      "ticker": "MSFT",
+      "company_name": "Microsoft Corporation",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "weight": 0.065256,
+      "shares": 1546.65,
+      "market_value": 652564.46,
+      "price": 421.92
+    },
+    {
+      "ticker": "PFE",
+      "company_name": "Pfizer Inc.",
+      "sector": "Healthcare",
+      "industry": "Drug Manufacturers - General",
+      "weight": 0.064186,
+      "shares": 25339.83,
+      "market_value": 641858.02,
+      "price": 25.33
+    },
+    {
+      "ticker": "USB",
+      "company_name": "U.S. Bancorp",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional",
+      "weight": 0.050605,
+      "shares": 9526.48,
+      "market_value": 506046.51,
+      "price": 53.12
+    },
+    {
+      "ticker": "ADBE",
+      "company_name": "Adobe Inc.",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "weight": 0.050428,
+      "shares": 2036.69,
+      "market_value": 504283.37,
+      "price": 247.6
+    },
+    {
+      "ticker": "MS",
+      "company_name": "Morgan Stanley",
+      "sector": "Financial Services",
+      "industry": "Capital Markets",
+      "weight": 0.048409,
+      "shares": 2514.63,
+      "market_value": 484091.93,
+      "price": 192.51
+    },
+    {
+      "ticker": "V",
+      "company_name": "Visa Inc.",
+      "sector": "Financial Services",
+      "industry": "Credit Services",
+      "weight": 0.047325,
+      "shares": 1452.8,
+      "market_value": 473251.15,
+      "price": 325.75
+    },
+    {
+      "ticker": "JNJ",
+      "company_name": "Johnson & Johnson",
+      "sector": "Healthcare",
+      "industry": "Drug Manufacturers - General",
+      "weight": 0.046614,
+      "shares": 2056.12,
+      "market_value": 466142.73,
+      "price": 226.71
+    },
+    {
+      "ticker": "BA",
+      "company_name": "The Boeing Company",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "weight": 0.044614,
+      "shares": 2023.42,
+      "market_value": 446143.68,
+      "price": 220.49
+    },
+    {
+      "ticker": "TSLA",
+      "company_name": "Tesla, Inc.",
+      "sector": "Consumer Cyclical",
+      "industry": "Auto Manufacturers",
+      "weight": 0.044585,
+      "shares": 1055.92,
+      "market_value": 445850.6,
+      "price": 422.24
+    },
+    {
+      "ticker": "DUK",
+      "company_name": "Duke Energy Corporation",
+      "sector": "Utilities",
+      "industry": "Utilities - Regulated Electric",
+      "weight": 0.043901,
+      "shares": 3629.72,
+      "market_value": 439014.87,
+      "price": 120.95
+    },
+    {
+      "ticker": "AMZN",
+      "company_name": "Amazon.com, Inc.",
+      "sector": "Consumer Cyclical",
+      "industry": "Internet Retail",
+      "weight": 0.042366,
+      "shares": 1603.9,
+      "market_value": 423655.21,
+      "price": 264.14
+    },
+    {
+      "ticker": "WFC",
+      "company_name": "Wells Fargo & Company",
+      "sector": "Financial Services",
+      "industry": "Banks - Diversified",
+      "weight": 0.039991,
+      "shares": 5446.93,
+      "market_value": 399913.35,
+      "price": 73.42
+    },
+    {
+      "ticker": "GS",
+      "company_name": "The Goldman Sachs Group, Inc.",
+      "sector": "Financial Services",
+      "industry": "Capital Markets",
+      "weight": 0.035727,
+      "shares": 376.68,
+      "market_value": 357273.58,
+      "price": 948.47
+    },
+    {
+      "ticker": "AAPL",
+      "company_name": "Apple Inc.",
+      "sector": "Technology",
+      "industry": "Consumer Electronics",
+      "weight": 0.034804,
+      "shares": 1159.24,
+      "market_value": 348037.89,
+      "price": 300.23
+    },
+    {
+      "ticker": "C",
+      "company_name": "Citigroup Inc.",
+      "sector": "Financial Services",
+      "industry": "Banks - Diversified",
+      "weight": 0.031084,
+      "shares": 2518.52,
+      "market_value": 310835.4,
+      "price": 123.42
+    },
+    {
+      "ticker": "DIS",
+      "company_name": "The Walt Disney Company",
+      "sector": "Communication Services",
+      "industry": "Entertainment",
+      "weight": 0.029463,
+      "shares": 2868.29,
+      "market_value": 294630.41,
+      "price": 102.72
+    },
+    {
+      "ticker": "MA",
+      "company_name": "Mastercard Incorporated",
+      "sector": "Financial Services",
+      "industry": "Credit Services",
+      "weight": 0.027215,
+      "shares": 550.69,
+      "market_value": 272149.0,
+      "price": 494.2
+    },
+    {
+      "ticker": "CRM",
+      "company_name": "Salesforce, Inc.",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "weight": 0.021606,
+      "shares": 1245.23,
+      "market_value": 216059.93,
+      "price": 173.51
+    },
+    {
+      "ticker": "LMT",
+      "company_name": "Lockheed Martin Corporation",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "weight": 0.021099,
+      "shares": 408.89,
+      "market_value": 210992.99,
+      "price": 516.01
+    },
+    {
+      "ticker": "RTX",
+      "company_name": "RTX Corporation",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "weight": 0.019634,
+      "shares": 1147.01,
+      "market_value": 196344.51,
+      "price": 171.18
+    },
+    {
+      "ticker": "COST",
+      "company_name": "Costco Wholesale Corporation",
+      "sector": "Consumer Defensive",
+      "industry": "Discount Stores",
+      "weight": 0.019223,
+      "shares": 183.26,
+      "market_value": 192229.79,
+      "price": 1048.95
+    },
+    {
+      "ticker": "BRK-B",
+      "company_name": "Berkshire Hathaway Inc.",
+      "sector": "Financial Services",
+      "industry": "Insurance - Diversified",
+      "weight": 0.018385,
+      "shares": 380.88,
+      "market_value": 183849.15,
+      "price": 482.7
+    },
+    {
+      "ticker": "TXN",
+      "company_name": "Texas Instruments Incorporated",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "weight": 0.018011,
+      "shares": 594.96,
+      "market_value": 180111.28,
+      "price": 302.73
+    },
+    {
+      "ticker": "QCOM",
+      "company_name": "QUALCOMM Incorporated",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "weight": 0.013329,
+      "shares": 661.52,
+      "market_value": 133289.94,
+      "price": 201.49
+    },
+    {
+      "ticker": "SCHW",
+      "company_name": "The Charles Schwab Corporation",
+      "sector": "Financial Services",
+      "industry": "Capital Markets",
+      "weight": 0.011776,
+      "shares": 1295.79,
+      "market_value": 117761.56,
+      "price": 90.88
+    },
+    {
+      "ticker": "MMM",
+      "company_name": "3M Company",
+      "sector": "Industrials",
+      "industry": "Conglomerates",
+      "weight": 0.010818,
+      "shares": 739.82,
+      "market_value": 108175.8,
+      "price": 146.22
+    },
+    {
+      "ticker": "INTC",
+      "company_name": "Intel Corporation",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "weight": 0.010079,
+      "shares": 926.65,
+      "market_value": 100791.53,
+      "price": 108.77
+    },
+    {
+      "ticker": "GOOGL",
+      "company_name": "Alphabet Inc.",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information",
+      "weight": 0.009519,
+      "shares": 239.91,
+      "market_value": 95191.55,
+      "price": 396.78
+    },
+    {
+      "ticker": "GE",
+      "company_name": "GE Aerospace",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "weight": 0.009409,
+      "shares": 334.21,
+      "market_value": 94090.35,
+      "price": 281.53
+    }
+  ]
+}
