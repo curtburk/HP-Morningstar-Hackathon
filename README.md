@@ -56,7 +56,7 @@ Three models are pre-staged in the HuggingFace repo [`curtburk/HP-Morningstar-Ha
 2. Make it executable and run it:
 
 ```bash
-cd ~/Desktop/Hackathon-prep
+cd ~/Desktop/your-dir
 chmod +x download_models.sh
 ./download_models.sh
 ```
