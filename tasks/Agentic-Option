@@ -1,0 +1,133 @@
+# Proposal B: Agentic Financial Compliance Agent
+
+**HP + Morningstar AI Hackathon** | 4 Hours | HP ZGX Nano AI Station
+
+---
+
+## Overview
+
+Build an AI agent that autonomously analyzes financial documents, checks compliance rules, and produces structured reports - running entirely on the ZGX Nano. Unlike a simple Q&A chatbot, your agent will reason, plan, select tools, and execute multi-step workflows on its own. Given a natural language compliance query, it will figure out what data to pull, what checks to run, and how to assemble the findings into a report.
+
+---
+
+## How This Differs from Proposal A
+
+| Proposal A: RAG Research Assistant | Proposal B: Agentic Compliance Agent |
+|------------------------------------|--------------------------------------|
+| Single pipeline: retrieve context, generate answer | Multi-step: plan, call tools, observe results, refine |
+| User asks a question, gets an answer | User states a goal, agent figures out the steps |
+| Good starting point for teams newer to local AI | Better for teams already comfortable with RAG who want to push further |
+
+Proposal B is more complex, but the payoff is bigger. Watching an agent autonomously reason through a compliance check - calling the right tools in the right order, logging every decision - is a different experience from a Q&A chatbot.
+
+---
+
+## What You'll Build
+
+### The Agent's Mission
+
+The agent acts as a "Compliance Analyst Assistant." Given a request like *"Check whether Portfolio Alpha's tech sector concentration exceeds our 30% policy limit, and flag any holdings that appeared on the restricted list"*, the agent should:
+
+1. **Plan** - Decompose the request into sub-tasks (look up portfolio, calculate sector weights, fetch restricted list, compare)
+2. **Act** - Call the appropriate tools for each sub-task
+3. **Observe** - Read the tool outputs and decide if more steps are needed
+4. **Report** - Synthesize findings into a structured compliance memo with citations
+
+### The Tool Kit
+
+You'll implement 4-6 Python functions that the agent can call via Ollama's tool-calling API. Each tool has a clear schema so the LLM knows what arguments it needs and what it returns:
+
+| Tool | What It Does | Sample Input / Output |
+|------|-------------|----------------------|
+| `lookup_portfolio` | Returns holdings, weights, and sectors for a named portfolio from a local JSON file | Input: `{"name": "Alpha"}` - Output: list of holdings with ticker, weight, sector |
+| `get_sector_exposure` | Calculates aggregate sector weights for a portfolio. Used to check concentration limits. | Input: `{"portfolio": "Alpha"}` - Output: `{"Technology": 0.35, "Healthcare": 0.22, ...}` |
+| `check_restricted_list` | Cross-references tickers against a restricted securities list (a local CSV). | Input: `{"tickers": ["AAPL", "XYZ"]}` - Output: `{"flagged": ["XYZ"], "reason": "under investigation"}` |
+| `search_filings` | Semantic search over pre-loaded SEC filings using local embeddings + vector store. | Input: `{"query": "revenue guidance Q3"}` - Output: relevant document chunks with citations |
+| `calculate_risk_metric` | Computes a risk metric (Herfindahl index, concentration score) from portfolio data. | Input: `{"portfolio": "Alpha", "metric": "herfindahl"}` - Output: `{"score": 0.12, "rating": "moderate"}` |
+| `generate_memo` | Formats findings into a structured compliance memo with timestamps and source references. | Input: `{"findings": [...], "format": "markdown"}` - Output: formatted memo file path |
+
+---
+
+## The Agent Loop: Plan - Act - Observe - Refine
+
+This is the core concept you'll implement. Unlike a simple RAG chain (retrieve then generate), an agentic loop gives the LLM autonomy to decide its next action based on what it's already learned:
+
+- **Plan** - The LLM receives the user's request and the available tool schemas. It reasons about which tools to call and in what order. With Ollama's native tool-calling support, the model outputs a structured JSON tool call rather than free-form text.
+- **Act** - The agent framework intercepts the tool call, validates the arguments against the schema, executes the corresponding Python function, and captures the result.
+- **Observe** - The tool output is fed back to the LLM as a new message. The model reads the result and decides: does it have enough information to answer, or does it need another tool call?
+- **Refine** - If the model needs more data, it issues another tool call. If it has enough, it produces a final response. The loop continues until the agent is satisfied or hits a configurable step limit (a safety guardrail).
+
+In compliance workflows, analysts routinely chain multiple lookups and cross-checks before writing a finding. An agentic system mirrors this real-world workflow - and does it in seconds rather than hours.
+
+---
+
+## Technology Stack
+
+| Layer | Tool | Notes |
+|-------|------|-------|
+| Agent LLM | Ollama with Qwen3.5-9B (or your choice) | Supports native tool calling; strong structured output for agentic tasks |
+| Agent Framework | LangGraph or raw Ollama tool-calling loop | LangGraph for teams wanting structure; raw loop for teams wanting to understand the mechanics |
+| Embeddings | nomic-embed-text via Ollama | For the `search_filings` tool's vector store |
+| Vector Store | ChromaDB | Lightweight, in-process |
+| Data Layer | Local JSON/CSV files | Sample portfolios, restricted list, compliance rules - all pre-loaded on device |
+| UI | Gradio or Streamlit | Chat interface with a live "tool call trace" panel showing the agent's reasoning |
+| Logging | MLflow + local JSON audit log | Every tool call, input, output, and decision logged |
+| Dev Environment | VS Code + ZGX Toolkit extension | Use your own laptop; ZGX Nano handles all inference and compute |
+
+---
+
+## Sample Data
+
+The ZGX Nano is pre-loaded with sample financial data in the `hackathon_data/` directory. See the data README for full details. Key resources:
+
+- **`portfolios/`** - 5 sample equity portfolios as JSON files. Alpha, Gamma, and Epsilon are deliberately non-compliant (sector concentrations above 30%) to give the agent real violations to find.
+- **`compliance/restricted_list.csv`** - 15 securities flagged for various reasons (MNPI, insider trading, regulatory hold). Some overlap with portfolio holdings to create cross-reference scenarios.
+- **`compliance/compliance_rules.yaml`** - Policy rules the agent can reference programmatically: sector concentration limits, single-holding limits, Herfindahl threshold, minimum holdings.
+- **`filings/`** - SEC 10-K full-text filings from 10 public companies. Raw `.txt` files - chunking strategy for the vector store is up to you.
+- **`benchmark/benchmark_questions.json`** - 10 compliance queries at easy/medium/hard difficulty with expected tool calls and answers.
+
+---
+
+## Schedule
+
+| Time | Duration | Activity |
+|------|----------|----------|
+| 0:00 | 30 min | **Kickoff + Orientation** - Connect to ZGX Nano via VS Code. Verify Ollama is serving a tool-calling model. Run the pre-built "hello world" agent that calls a single tool to confirm the full loop works. Brief intro: what's agentic AI, what's a tool call, what's the plan-act-observe loop. |
+| 0:30 | 60 min | **Sprint 1: Build the Tools** - Implement 4-6 Python tool functions. Define JSON schemas for each tool. Test each tool independently before wiring into the agent. Set up the vector store with embedded documents for `search_filings`. |
+| 1:30 | 15 min | **Break + Check-in** - Where is everyone? Common issues? Snacks. |
+| 1:45 | 75 min | **Sprint 2: Wire the Agent Loop + UI** - Connect tools to the LLM via Ollama's tool-calling API (or LangGraph). Implement the plan-act-observe-refine loop with a step limit. Build a Gradio/Streamlit UI with a chat panel and a live "Agent Trace" sidebar showing each tool call, input, output, and reasoning step. Add audit logging: every action written to a local JSON log with timestamps. |
+| 3:00 | 15 min | **Break** |
+| 3:15 | 30 min | **Sprint 3: Evaluate + Stress Test** - Run the benchmark questions. Measure: tool-call accuracy (did the agent call the right tools?), answer correctness, total latency per multi-step query, and number of tool calls per task. Try adversarial queries: ambiguous requests, requests requiring 5+ tool calls, requests that should be refused. Review the audit log as a compliance artifact. |
+| 3:45 | 15 min | **Demo + Debrief** - Each team demos their agent handling a live compliance query. Show the tool-call trace. Discussion: what worked? What broke? Where would you take this next? |
+
+---
+
+## What to Bring
+
+- Your own laptop with VS Code and the Remote SSH extension installed
+- Familiarity with Python (the tools are all Python functions)
+- Awareness of basic compliance concepts (sector limits, restricted lists) - which you'll have as financial services developers
+
+---
+
+## Goals
+
+By the end of the hackathon, your team should have:
+
+- An agent that decomposes multi-part compliance queries into steps, calls the right tools, and produces coherent answers
+- A visible decision trail: the trace sidebar shows every tool call and reasoning step so you can see the agent "think"
+- A complete audit log: every action logged locally with timestamps, tool names, inputs, outputs, and reasoning
+- Experience with the agentic development loop: tool schema design, prompt tuning, failure mode testing, and iterating fast on local compute
+
+---
+
+## Choosing Between Proposal A and Proposal B
+
+| Factor | Proposal A (RAG) | Proposal B (Agentic) |
+|--------|-------------------|----------------------|
+| Team experience | Good for teams newer to local AI / LLM development | Better for teams already comfortable with AI who want to push further |
+| Complexity | Lower - single pipeline, predictable flow | Higher - multi-step reasoning, tool schema design, failure modes |
+| Risk of not finishing | Low - most teams will complete the full pipeline | Medium - some teams may have 3-4 tools working vs. all 6, which is still a good demo |
+| Relevance to Morningstar | High - research Q&A is a core workflow | Very high - compliance monitoring is a critical daily function |
+
+Both work. If your team has built RAG systems before, Proposal B will be more engaging. If you're newer to local AI development, Proposal A gives a stronger foundation.
